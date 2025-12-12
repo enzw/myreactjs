@@ -1,4 +1,4 @@
-import { CounterCard } from "./components/counterCard";
+import { CounterCard } from "./components/CounterCard";
 
 const App = () => {
   return (
