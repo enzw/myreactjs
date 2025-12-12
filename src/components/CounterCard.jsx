@@ -1,7 +1,7 @@
 import { useState } from "react";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
-const CounterCard = ({ title, start }) => {
+const CounterCard = ({ title, start = 0 }) => {
     const [count, setCount] = useState(start);
 
     return (
@@ -19,7 +19,7 @@ const CounterCard = ({ title, start }) => {
                 +
             </button>
 
-            <button onClick={() => { if (count > 0) { setCount(count - 1) } }}>
+            <button onClick={() => { if (count > 0) { setCount(count - 1) } }} style={{ marginLeft: "6px" }}>
                 -
             </button>
         </div>
@@ -28,11 +28,7 @@ const CounterCard = ({ title, start }) => {
 
 CounterCard.propType = {
     title: PropTypes.string.isRequired,
-    start: PropTypes.number.isRequired
-}
-
-CounterCard.defaultProps = {
-    start: 0
+    start: PropTypes.number
 }
 
 export { CounterCard }
