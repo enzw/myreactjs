@@ -2,7 +2,7 @@ import { MyNavbar } from "./Komponen/Navbar"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import banner from './assets/banner.png';
 import './Style/style.scss'
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { About } from "./Komponen/About";
 
 const Porto = () => {
